@@ -14,7 +14,7 @@ let kItunesURLKey = "app.updater.itunes.url"
 
 public class MMMSwiftAppUpdater: NSObject {
     
-    static let sharedInstance = MMMSwiftAppUpdater()
+    static public let sharedInstance = MMMSwiftAppUpdater()
     
     public func openAppstoreURL() -> Bool {
         let path = NSUserDefaults.standardUserDefaults().objectForKey(kItunesURLKey) as? String

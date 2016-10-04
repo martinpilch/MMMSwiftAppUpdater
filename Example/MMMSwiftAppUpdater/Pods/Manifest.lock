@@ -1,11 +1,11 @@
 PODS:
-  - MMMSwiftAppUpdater (1.0)
+  - MMMSwiftAppUpdater (1.0.1)
 
 DEPENDENCIES:
   - MMMSwiftAppUpdater
 
 SPEC CHECKSUMS:
-  MMMSwiftAppUpdater: 652cdc73bdfea2f4249bf28dedc5fb7381a17e74
+  MMMSwiftAppUpdater: d1ee7949cc2344f0175c1bdf6154be5db0e24a4f
 
 PODFILE CHECKSUM: 2c9edb8409b8a954213c14bcbdfc45cd00288331
 
