@@ -12,9 +12,11 @@
 		8F50E54E1DA3E195007C356F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F50E54C1DA3E195007C356F /* Main.storyboard */; };
 		8F50E5501DA3E195007C356F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F50E54F1DA3E195007C356F /* Assets.xcassets */; };
 		8F50E5531DA3E195007C356F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F50E5511DA3E195007C356F /* LaunchScreen.storyboard */; };
+		FAFD0F65B04A52DB4F4C3031 /* Pods_MMMSwiftAppUpdater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0087BDBD5BC8E2F542193194 /* Pods_MMMSwiftAppUpdater.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0087BDBD5BC8E2F542193194 /* Pods_MMMSwiftAppUpdater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMMSwiftAppUpdater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F50E5451DA3E195007C356F /* MMMSwiftAppUpdater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMMSwiftAppUpdater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F50E5481DA3E195007C356F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F50E54A1DA3E195007C356F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8F50E54F1DA3E195007C356F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F50E5521DA3E195007C356F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F50E5541DA3E195007C356F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACBD7AF4CB46F50B0D854AD /* Pods-MMMSwiftAppUpdater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMMSwiftAppUpdater.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMMSwiftAppUpdater/Pods-MMMSwiftAppUpdater.release.xcconfig"; sourceTree = "<group>"; };
+		F16FDC2C6EB9036937F1499F /* Pods-MMMSwiftAppUpdater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMMSwiftAppUpdater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMMSwiftAppUpdater/Pods-MMMSwiftAppUpdater.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFD0F65B04A52DB4F4C3031 /* Pods_MMMSwiftAppUpdater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13E122CE60B635D528067C5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0087BDBD5BC8E2F542193194 /* Pods_MMMSwiftAppUpdater.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36BC54B50C2F71B5B3ACBAC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F16FDC2C6EB9036937F1499F /* Pods-MMMSwiftAppUpdater.debug.xcconfig */,
+				DACBD7AF4CB46F50B0D854AD /* Pods-MMMSwiftAppUpdater.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8F50E53C1DA3E195007C356F = {
 			isa = PBXGroup;
 			children = (
 				8F50E5471DA3E195007C356F /* MMMSwiftAppUpdater */,
 				8F50E5461DA3E195007C356F /* Products */,
+				36BC54B50C2F71B5B3ACBAC6 /* Pods */,
+				13E122CE60B635D528067C5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F50E5571DA3E195007C356F /* Build configuration list for PBXNativeTarget "MMMSwiftAppUpdater" */;
 			buildPhases = (
+				747EBFC7D3EC496FCA2A734E /* [CP] Check Pods Manifest.lock */,
 				8F50E5411DA3E195007C356F /* Sources */,
 				8F50E5421DA3E195007C356F /* Frameworks */,
 				8F50E5431DA3E195007C356F /* Resources */,
+				10C12D730E86F1D318A5BEC3 /* [CP] Embed Pods Frameworks */,
+				D91AF584FCF15DEBA40DB453 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10C12D730E86F1D318A5BEC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMMSwiftAppUpdater/Pods-MMMSwiftAppUpdater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		747EBFC7D3EC496FCA2A734E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D91AF584FCF15DEBA40DB453 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMMSwiftAppUpdater/Pods-MMMSwiftAppUpdater-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F50E5411DA3E195007C356F /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		8F50E5581DA3E195007C356F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16FDC2C6EB9036937F1499F /* Pods-MMMSwiftAppUpdater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MMMSwiftAppUpdater/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		8F50E5591DA3E195007C356F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DACBD7AF4CB46F50B0D854AD /* Pods-MMMSwiftAppUpdater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MMMSwiftAppUpdater/Info.plist;
@@ -288,6 +365,7 @@
 				8F50E5591DA3E195007C356F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,12 @@
+PODS:
+  - MMMSwiftAppUpdater (1.0)
+
+DEPENDENCIES:
+  - MMMSwiftAppUpdater
+
+SPEC CHECKSUMS:
+  MMMSwiftAppUpdater: 652cdc73bdfea2f4249bf28dedc5fb7381a17e74
+
+PODFILE CHECKSUM: 2c9edb8409b8a954213c14bcbdfc45cd00288331
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,6 @@
+framework module Pods_MMMSwiftAppUpdater {
+  umbrella header "Pods-MMMSwiftAppUpdater-umbrella.h"
+
+  export *
+  module * { export * }
+}
