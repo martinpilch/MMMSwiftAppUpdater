@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MMMSwiftAppUpdater"
-  s.version          = "1.0"
+  s.version          = "1.0.1"
   s.summary          = "Simple pod to check new version of application in Appstore"
   s.description      = "Simple class to check new version of app. You can simply check for new version of the app and open Appstore to let user to update."
   s.homepage         = "https://github.com/martinpilch/MMMSwiftAppUpdater"
